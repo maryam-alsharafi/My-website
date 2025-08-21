@@ -1,0 +1,223 @@
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #ffdee9;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hero {
+    padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #ffcde3;
+  background-image: url("m2.png");
+  background-size: cover;
+  background-position: center 30%; /* هنا تتحكم بالوجه لتحت أو لفوق */
+  margin-bottom: 20px;
+}
+.hero h2 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff80ab;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f06292;
+}
+
+.footer {
+  background-color: #fceef2;
+  color: #555;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #e5d4dc;
+  margin-top: 40px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer .social-links {
+  margin-top: 10px;
+}
+
+.footer .social-links a {
+  color: #d17c95;
+  font-size: 20px;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #a64d6b;
+}
+
+.workshops {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff5fa;
+}
+
+.workshops h2 {
+  color: #e91e63;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.workshop-card {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  background: #ffffff;
+  border: 1px solid #ffd4e5;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.workshop-card h3 {
+  margin-top: 0;
+  color: #d81b60;
+}
+
+.workshop-card p {
+  margin: 10px auto 20px;
+  max-width: 420px;
+}
+
+.workshop-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+.workshop-card ul li {
+  margin: 4px 0;
+}
+
+.workshop-btn {
+  display: inline-block;
+  background: #ff80ab;
+  color: #fff;
+  margin: 0 auto;
+  padding: 10px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.25s;
+}
+.workshop-btn:hover {
+  background: #f06292;
+}
+
+/* موبايل */
+@media (max-width: 600px) {
+  .workshops {
+    padding: 40px 15px;
+  }
+  .workshop-card {
+    padding: 20px 15px;
+  }
+  .workshop-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.follow-button {
+  display: inline-block;
+  background-color: #f7c7d9; /* وردي فاتح */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.follow-button:hover {
+  background-color: #f497b6; /* وردي أغمق شوي */
+  transform:scale(1.05);
+  }
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+   .hero p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .workshop-card, .hero p {
+    max-width: 90%;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .footer .social-links a {
+    font-size: 18px;
+    margin: 0 8px;
+  }
+}
